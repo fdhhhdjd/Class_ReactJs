@@ -18,7 +18,7 @@ const UseState = () => {
 
   return (
    <div>
-      <h1 >Đếm số lần bạn đã click: {count}</h1>
+      <h1>Đếm số lần bạn đã click: {count}</h1>
       <button onClick={increment}>Tăng</button>
       <button onClick={decrement}>Giảm</button>
     </div>
