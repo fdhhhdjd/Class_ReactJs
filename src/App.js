@@ -7,6 +7,7 @@ import LearnTow from "./hooks/useState/learn_2";
 import LearnThree from "./hooks/useState/learn_3";
 import LearnFour from "./hooks/useState/learn_4";
 import LearnFive from "./hooks/useState/learn_5";
+import LearnSix from "./hooks/useState/learn_6";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <LearnTow /> */}
       {/* <LearnThree /> */}
       {/* <LearnFour /> */}
-      <LearnFive />
+      {/* <LearnFive /> */}
+      <LearnSix />
     </Fragment>
   );
 }
