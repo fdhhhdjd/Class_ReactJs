@@ -18,7 +18,7 @@ function App() {
       <UseState />
 
       {/* 2. useEffect */}
-      {/* <UseEffect/> */}
+      <UseEffect/>
     </Fragment>
   );
 }
