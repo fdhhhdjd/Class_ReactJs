@@ -1,12 +1,16 @@
 import React, { Fragment } from "react";
 import "./App.css";
-import UseState from "./hooks/useState/UseState";
+import LearnOne from "./hooks/useState/learn_1";
+import LearnTow from "./hooks/useState/learn_2";
+import LearnThree from "./hooks/useState/learn_3";
 
 function App() {
   return (
     <Fragment>
       {/* 1. UseState */}
-      <UseState />
+      {/* <LearnOne /> */}
+      {/* <LearnTow /> */}
+      <LearnThree />
     </Fragment>
   );
 }
