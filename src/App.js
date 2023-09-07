@@ -1,26 +1,17 @@
 import React, { Fragment } from "react";
 import "./App.css";
+import UseState from "./hooks/useState/useState";
 
 //* Hook
-import LearnOne from "./hooks/useState/learn_1";
-import LearnTow from "./hooks/useState/learn_2";
-import LearnThree from "./hooks/useState/learn_3";
-import LearnFour from "./hooks/useState/learn_4";
-import LearnFive from "./hooks/useState/learn_5";
-import LearnSix from "./hooks/useState/learn_6";
-import LearnSeven from "./hooks/useState/learn_7";
+
 
 function App() {
   return (
     <Fragment>
-      {/* 1. UseState */}
-      {/* <LearnOne /> */}
-      {/* <LearnTow /> */}
-      {/* <LearnThree /> */}
-      {/* <LearnFour /> */}
-      {/* <LearnFive /> */}
-      {/* <LearnSix /> */}
-      <LearnSeven />
+      {/* 1. useState */}
+      {/* <UseState /> */}
+
+      {/* 2. useEffect */}
     </Fragment>
   );
 }
