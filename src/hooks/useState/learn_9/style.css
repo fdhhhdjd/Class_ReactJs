@@ -1,0 +1,52 @@
+*{
+ 
+    box-sizing: border-box;
+margin: 0;padding: 0;
+
+}
+.app{
+    min-height: 100vh;
+    background-color:#35297a;
+    display: flex;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    max-width:600px;
+}
+.errorMsg{
+    color: red;
+    font-size:  24px;
+    margin:3px 0;
+
+}
+.imgPreview{
+    width: 100%;height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.imgPreview input[type="file"]{
+    display: none;
+}
+.imgPreview .customFileUpload{
+    color: #55d6d6;
+    font-size:22px;
+    font-weight:500;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+button{
+    border: none;
+    outline: none;
+    width: 100%;
+    margin: 14px 10px;
+    background-color:#55d6d6;
+    color: #0a0a0a;
+    font-size: 17px;
+    font-weight:600;
+    cursor: pointer;
+}
