@@ -6,8 +6,6 @@ import React, { Fragment } from "react";
 // import LearnTow from "./learn_2";
 // import LearnThree from "./learn_3";
 
-
-
 function UseEffect() {
   return (
     <Fragment>
