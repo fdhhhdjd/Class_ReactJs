@@ -8,6 +8,7 @@ import "./App.css";
 import UseState from "./hooks/useState/useState";
 import UseEffect from "./hooks/useEffect/useEffect";
 import UseRef from "./hooks/useRef/useRef";
+import UseLayoutEffect from "./hooks/useLayoutEffect/useLayoutEffect";
 
 
 
@@ -21,7 +22,10 @@ function App() {
       {/* <UseEffect/> */}
 
       {/* 3. useRef */}
-      <UseRef/>
+      {/* <UseRef/> */}
+      
+      {/* 4. useLayoutEffect */}
+      <UseLayoutEffect/>
     </Fragment>
   );
 }
