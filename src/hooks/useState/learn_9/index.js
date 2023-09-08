@@ -12,15 +12,22 @@ const UpdateImg = () => {
     const selected = e.target.files[0];
     const ALLOWED_TYPES = ["image/png", "image/jpeg", "image/jpg"];
     if (selected && ALLOWED_TYPES.includes(selected.type)) {
-      let reader = new FileReader(); //* Đọc các nguồn dữ liệu trên máy tính của người dùng
+      
+      //* Đọc các nguồn dữ liệu trên máy tính của người dùng
+      let reader = new FileReader(); 
+
       //* onloadend: được kích hoạt khi quá trình đọc kết thúc, thành công hoặc không thành công
       reader.onloadend = () => {
+
         //*result: Nội dung của nguồn dữ liệu sau khi đọc thành công
         setImgPreview(reader.result);
+
       };
-      //*readAsDataURL: Bắt đầu đọc nội dung của blobOrFile, một khi hoàn thành, fileReader.result
+
+      //* readAsDataURL: Bắt đầu đọc nội dung của blobOrFile, một khi hoàn thành, fileReader.result
       //* sẽ là một URL đại diện cho dữ liệu đọc được.
       reader.readAsDataURL(selected);
+
     } else {
       setError(true);
     }
