@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+
+//* Hook
+import LearnOne from "./learn_1";
 
 const UseDeferredValue = () => {
-  return <div>useDeferredValue</div>;
+  return (
+    <Fragment>
+      <LearnOne />
+      {/* <LearnTow /> */}
+    </Fragment>
+  );
 };
 
 export default UseDeferredValue;

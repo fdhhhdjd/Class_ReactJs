@@ -8,8 +8,8 @@ import React, { Fragment } from "react";
 // import UseLayoutEffect from "./hooks/useLayoutEffect/useLayoutEffect";
 // import UseCallback from "./hooks/useCallback/useCallback";
 // import UseId from "./hooks/useId/useId";
-import UseTransition from "./hooks/useTransition/useTransition";
-// import UseDeferredValue from "./hooks/useDeferredValue/UseDeferredValue";
+// import UseTransition from "./hooks/useTransition/useTransition";
+import UseDeferredValue from "./hooks/useDeferredValue/useDeferredValue";
 
 ///* HOC
 // import Memo from "./Hoc/memo/memo";
@@ -39,10 +39,10 @@ function App() {
       {/* <UseId /> */}
 
       {/* 8. useTransition*/}
-      <UseTransition />
+      {/* <UseTransition /> */}
 
       {/* 9. useDeferredValue*/}
-      {/* <UseDeferredValue/> */}
+      <UseDeferredValue />
     </Fragment>
   );
 }
