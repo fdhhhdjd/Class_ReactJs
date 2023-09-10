@@ -10,7 +10,8 @@ import React, { Fragment } from "react";
 // import UseId from "./hooks/useId/useId";
 // import UseTransition from "./hooks/useTransition/useTransition";
 // import UseDeferredValue from "./hooks/useDeferredValue/useDeferredValue";
-import UseMemo from "./hooks/useMemo/useMemo";
+// import UseMemo from "./hooks/useMemo/useMemo";
+import UseImperativeHandle from "./hooks/useImperativeHandle/useImperativeHandle";
 
 ///* HOC
 // import Memo from "./Hoc/memo/memo";
@@ -46,7 +47,10 @@ function App() {
       {/* <UseDeferredValue /> */}
 
       {/* 10. useMemo*/}
-      <UseMemo />
+      {/* <UseMemo /> */}
+
+      {/* 10. useImperativeHandle*/}
+      <UseImperativeHandle />
     </Fragment>
   );
 }
