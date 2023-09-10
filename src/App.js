@@ -7,9 +7,8 @@ import React, { Fragment } from "react";
 // import UseRef from "./hooks/useRef/useRef";
 // import UseLayoutEffect from "./hooks/useLayoutEffect/useLayoutEffect";
 // import UseCallback from "./hooks/useCallback/useCallback";
-import UseId from "./hooks/useId/useId";
-
-// import UseTransition from "./hooks/useTransition/useTransition";
+// import UseId from "./hooks/useId/useId";
+import UseTransition from "./hooks/useTransition/useTransition";
 // import UseDeferredValue from "./hooks/useDeferredValue/UseDeferredValue";
 
 ///* HOC
@@ -37,10 +36,10 @@ function App() {
       {/* <UseCallback/> */}
 
       {/* 7. useId*/}
-      <UseId />
+      {/* <UseId /> */}
 
       {/* 8. useTransition*/}
-      {/* <UseTransition/> */}
+      <UseTransition />
 
       {/* 9. useDeferredValue*/}
       {/* <UseDeferredValue/> */}
