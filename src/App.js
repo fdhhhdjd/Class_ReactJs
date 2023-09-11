@@ -12,7 +12,8 @@ import React, { Fragment } from "react";
 // import UseDeferredValue from "./hooks/useDeferredValue/useDeferredValue";
 // import UseMemo from "./hooks/useMemo/useMemo";
 // import UseImperativeHandle from "./hooks/useImperativeHandle/useImperativeHandle";
-import UseContext from "./hooks/useContext/userContext";
+// import UseContext from "./hooks/useContext/userContext";
+import UseReducer from "./hooks/userReducer/useReducer";
 
 ///* HOC
 // import Memo from "./Hoc/memo/memo";
@@ -54,7 +55,10 @@ function App() {
       {/* <UseImperativeHandle /> */}
 
       {/* 11. useContext*/}
-      <UseContext />
+      {/* <UseContext /> */}
+
+      {/* 12. useReducer*/}
+      <UseReducer />
     </Fragment>
   );
 }
