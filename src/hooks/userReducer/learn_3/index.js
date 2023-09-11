@@ -34,7 +34,7 @@ const TodoList = () => {
   const [editingText, setEditingText] = useState("");
 
   const addTodo = () => {
-    if (newTodo.trim() === "") return;
+    if (newTodo.trim() === "") return showToastError("Please,Input not empty!");
     dispatch(addTodoAction(newTodo));
     showToastSuccess(`Add ${newTodo} into todo success!`);
     setNewTodo("");
@@ -91,9 +91,7 @@ const TodoList = () => {
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
-          <button className="todo-button" onClick={addTodo}>
-            Add
-          </button>
+          <button className="todo-button">Add</button>
         </form>
         <ul className="todo-items">
           {todos.map((todo, index) => (
