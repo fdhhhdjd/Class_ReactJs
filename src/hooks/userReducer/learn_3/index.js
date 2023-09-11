@@ -30,8 +30,6 @@ const TodoList = () => {
 
   const { todos } = state;
 
-  console.log(todos);
-
   const [newTodo, setNewTodo] = useState("");
   const [editingText, setEditingText] = useState("");
 
@@ -98,7 +96,7 @@ const TodoList = () => {
           </button>
         </form>
         <ul className="todo-items">
-          {todos?.map((todo, index) => (
+          {todos.map((todo, index) => (
             <li key={index} className="todo-item">
               {todo.isEditing ? (
                 <>
