@@ -1,0 +1,152 @@
+/* style.css */
+
+/* Styling cho todo-list container */
+.todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Styling cho tiêu đề Todo List */
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling cho input thêm công việc mới */
+.todo-input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Styling cho nút Thêm */
+.todo-button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Hover effect cho nút Thêm */
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling cho danh sách công việc */
+.todo-items {
+  list-style: none;
+  padding: 0;
+}
+
+/* Styling cho mỗi công việc */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Styling cho nội dung công việc */
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styling khi công việc đã hoàn thành */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Styling cho nút Chỉnh sửa */
+.edit-button {
+  background-color: #ffc600;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Hover effect cho nút Chỉnh sửa */
+.edit-button:hover {
+  background-color: #ffaa00;
+}
+
+/* Styling cho nút Xóa */
+.delete-button {
+  background-color: #ff4136;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Hover effect cho nút Xóa */
+.delete-button:hover {
+  background-color: #d0021b;
+}
+
+/* Styling cho input chỉnh sửa công việc */
+.todo-input-editing {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Styling cho nút Lưu */
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Hover effect cho nút Lưu */
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* Hover effect cho nút Hủy */
+.cancel-button:hover {
+  background-color: #c82333;
+}
