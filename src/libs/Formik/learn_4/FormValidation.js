@@ -38,8 +38,8 @@ const FormValidation = () => {
       email: string()
         .email('please enter a valid email')
         .required('please enter your email')
-        .test('is-com-email', 'Email must end with .com', (value) => {
-          if (!value) return true; // Allow empty email
+        .test('is-com-email', 'email must end with .com', (value) => {
+          if (!value) return true;
           return value.endsWith('.com');
         }),
       password: string()
