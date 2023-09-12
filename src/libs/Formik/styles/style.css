@@ -18,6 +18,24 @@ h1 {
     margin-top: -1px;
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.button-container button:first-child {
+    margin-right: 10px;
+}
+
+.full-size {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 label {
     display: block;
     font-weight: bold;
