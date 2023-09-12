@@ -27,7 +27,8 @@
     "react/prop-types": "off",
     "react/display-name": "off",
     "react/jsx-key": "off",
-    "react/no-unknown-property": "off"
+    "react/no-unknown-property": "off",
+    "react-hooks/exhaustive-deps": "off"
   },
   "settings": {
     "react": {
