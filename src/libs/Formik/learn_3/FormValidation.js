@@ -8,9 +8,12 @@ import '../styles/style.css';
 import { Formik } from 'formik';
 import { object, string } from 'yup';
 
+const dataDrop = ['General Inquiry', 'Feedback', 'Support', 'Other'];
+
 const FormValidation = () => {
   const handleSubmit = (values) => {
-    const { name, email, message } = values;
+    const { name, email, subject, message } = values;
+    console.log({ name, email, subject, message });
     return alert(name);
   };
 
@@ -19,11 +22,13 @@ const FormValidation = () => {
       initialValues={{
         name: '',
         email: '',
+        subject: '',
         message: '',
       }}
       validationSchema={object().shape({
         name: string().required('please enter your name'),
         email: string().email('please enter a valid email').required('please enter your email'),
+        subject: string().required('please enter your subject'),
         message: string().required('please enter your message'),
       })}
       onSubmit={handleSubmit}
@@ -56,6 +61,24 @@ const FormValidation = () => {
                 required
               />
               <div className="error-text">{formik.touched.email && formik.errors.email}</div>
+            </div>
+            <div className="form-group">
+              <label htmlFor="subject">Subject</label>
+              <select
+                id="subject"
+                name="subject"
+                value={formik.values.subject}
+                onChange={(e) => formik.setFieldValue('subject', e.target.value)}
+                required
+              >
+                <option value="">-- Select Subject --</option>
+                {dataDrop.map((item) => (
+                  <option key={item.toLowerCase()} value={item.toLowerCase()}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+              <div className="error-text">{formik.touched.subject && formik.errors.subject}</div>
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
