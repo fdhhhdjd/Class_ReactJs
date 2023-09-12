@@ -2,7 +2,7 @@
 import React from 'react';
 
 //* CSS
-import './style.css';
+import './styles/style.css';
 
 //* LIB
 import { Provider } from 'react-redux';
