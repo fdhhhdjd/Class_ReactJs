@@ -2,7 +2,7 @@
 import React from "react";
 
 //* COMPONENTS
-import Form from "./components/Form";
+import Form from "./learn_1/Form";
 
 const Formik = () => {
   return (
