@@ -1,0 +1,39 @@
+.TodoInput {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.TodoInput label {
+  min-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.TodoInput input {
+  flex-grow: 1;
+  border: none;
+  background: #f7f1f1;
+  padding: 0 1.5em;
+  font-size: initial;
+  outline: none;
+}
+.TodoInput button {
+  padding: 0 1.3rem;
+  border: none;
+  background: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.4s ease-out;
+  outline: none;
+}
+.TodoInput button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.TodoInput input,
+.TodoInput button {
+  font-family: "Quicksand", sans-serif;
+  height: 3rem;
+}
