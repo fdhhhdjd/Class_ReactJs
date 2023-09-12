@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import Formik from "./Formik";
-import React_Redux from "./redux/react-redux";
+// import React_Redux from "./redux/react-redux";
 
 const Lib = () => {
   return (
@@ -10,7 +10,7 @@ const Lib = () => {
       <Formik />
 
       {/* Redux */}
-      <React_Redux />
+      {/* <React_Redux /> */}
     </Fragment>
   );
 };
