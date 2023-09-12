@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 //* REDUX
 import { addTodo } from '../stores/Action';
 
-import { showToastError, showToastSuccess } from '../../../../utils/toast';
+import { showToastError, showToastSuccess } from '../../../../../utils/toast';
 
 //* STYLES
 import '../styles/input.css';

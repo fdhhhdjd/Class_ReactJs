@@ -9,7 +9,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { removeTodo } from '../stores/Action';
 
 //* STYLE
-import { showToastError, showToastSuccess } from '../../../../utils/toast';
+import { showToastError, showToastSuccess } from '../../../../../utils/toast';
 import '../styles/todo.css';
 
 const Todo = ({ id, task, completed, toggleTodo, updateTodo }) => {
