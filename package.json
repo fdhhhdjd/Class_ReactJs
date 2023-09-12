@@ -17,11 +17,26 @@
     "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "husky": "^8.0.0"
+  },
   "scripts": {
     "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   },
   "eslintConfig": {
     "extends": [
