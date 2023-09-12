@@ -23,7 +23,7 @@ const FormValidation = () => {
       }}
       validationSchema={object().shape({
         name: string().required('please enter your name'),
-        email: string().required('please enter your email'),
+        email: string().email('please enter a valid email').required('please enter your email'),
         message: string().required('please enter your message'),
       })}
       onSubmit={handleSubmit}
