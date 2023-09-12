@@ -6,8 +6,9 @@ import '../styles/style.css';
 
 //* LIBRARY
 import { Formik } from 'formik';
+import { object, string } from 'yup';
 
-const Form = () => {
+const FormValidation = () => {
   const handleSubmit = (values) => {
     const { name, email, message } = values;
     return alert(name);
@@ -20,6 +21,11 @@ const Form = () => {
         email: '',
         message: '',
       }}
+      validationSchema={object().shape({
+        name: string().required('please enter your name'),
+        email: string().required('please enter your email'),
+        message: string().required('please enter your message'),
+      })}
       onSubmit={handleSubmit}
     >
       {(formik) => (
@@ -36,7 +42,9 @@ const Form = () => {
                 onChange={(e) => formik.setFieldValue('name', e.target.value)}
                 required
               />
+              <div className="error-text">{formik.touched.name && formik.errors.name}</div>
             </div>
+
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input
@@ -47,6 +55,7 @@ const Form = () => {
                 onChange={(e) => formik.setFieldValue('email', e.target.value)}
                 required
               />
+              <div className="error-text">{formik.touched.email && formik.errors.email}</div>
             </div>
             <div className="form-group">
               <label htmlFor="message">Message</label>
@@ -58,6 +67,7 @@ const Form = () => {
                 rows="4"
                 required
               />
+              <div className="error-text">{formik.touched.message && formik.errors.message}</div>
             </div>
             <button type="submit" onClick={formik.handleSubmit}>
               Submit
@@ -69,4 +79,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormValidation;
