@@ -1,11 +1,15 @@
+//* REACT
 import React from 'react';
 
-import '../style.css';
+//* STYLE
+import '../styles/style.css';
+
+//* LIBRARY
 import { Formik } from 'formik';
 
 const Form = () => {
   const handleSubmit = (values) => {
-    console.log('Form data submitted:', values);
+    return alert(values);
   };
 
   return (
