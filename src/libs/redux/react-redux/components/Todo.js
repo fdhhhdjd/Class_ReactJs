@@ -3,15 +3,14 @@ import React, { useState } from 'react';
 
 //* LIB
 import { useDispatch } from 'react-redux';
-import { toast } from 'react-toastify';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 //* REDUX
 import { removeTodo } from '../stores/Action';
 
 //* STYLE
-import '../styles/todo.css';
 import { showToastError, showToastSuccess } from '../../../../utils/toast';
+import '../styles/todo.css';
 
 const Todo = ({ id, task, completed, toggleTodo, updateTodo }) => {
   const dispatch = useDispatch();
