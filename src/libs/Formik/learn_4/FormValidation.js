@@ -33,11 +33,15 @@ const FormValidation = () => {
     },
     validationSchema: object().shape({
       firstName: string().required('please enter your first name'),
-      lastName: string()
-        .email('please enter a valid email')
-        .required('please enter your last name'),
+      lastName: string().required('please enter your last name'),
       userName: string().required('please enter your user name'),
-      email: string().email('please enter a valid email').required('please enter your email'),
+      email: string()
+        .email('please enter a valid email')
+        .required('please enter your email')
+        .test('is-com-email', 'Email must end with .com', (value) => {
+          if (!value) return true; // Allow empty email
+          return value.endsWith('.com');
+        }),
       password: string()
         .required('Please enter your password')
         .min(8, 'Password must be at least 8 characters')
