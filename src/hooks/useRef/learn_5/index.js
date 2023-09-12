@@ -24,12 +24,7 @@ function ExampleComponent() {
   return (
     <div>
       {/* Sử dụng useRef để tham chiếu đến input */}
-      <input
-        type="text"
-        ref={inputRef}
-        onChange={handleInputChange}
-        value={inputValue}
-      />
+      <input type="text" ref={inputRef} onChange={handleInputChange} value={inputValue} />
       <button onClick={handleButtonClick}>Xem giá trị</button>
     </div>
   );

@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 
 const paragraphStyle = {
   WebkitLineClamp: 3,
-  webkitBoxOrient: "vertical",
-  overflow: "hidden",
-  display: "-webkit-box",
+  webkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  display: '-webkit-box',
 };
 
 const Learn_4 = () => {
@@ -22,17 +22,15 @@ const Learn_4 = () => {
   return (
     <div>
       <p style={isOpen ? null : paragraphStyle} ref={ref}>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
-        ullam aperiam suscipit nostrum deserunt possimus unde quam totam
-        similique expedita fugiat nobis pariatur rerum, cumque quae accusantium
-        in eligendi! Doloribus. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Distinctio cum minus dolorum, quaerat harum omnis
-        rerum eveniet explicabo porro quo unde quod eaque eligendi doloribus,
-        pariatur odit rem ut nulla.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore ullam aperiam suscipit
+        nostrum deserunt possimus unde quam totam similique expedita fugiat nobis pariatur rerum,
+        cumque quae accusantium in eligendi! Doloribus. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Distinctio cum minus dolorum, quaerat harum omnis rerum eveniet explicabo
+        porro quo unde quod eaque eligendi doloribus, pariatur odit rem ut nulla.
       </p>
       {showReadMore && (
         <button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? "Read less..." : "read more..."}
+          {isOpen ? 'Read less...' : 'read more...'}
         </button>
       )}
     </div>

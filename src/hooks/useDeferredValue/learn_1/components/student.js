@@ -1,4 +1,4 @@
-import React, { useDeferredValue } from "react";
+import React, { useDeferredValue } from 'react';
 
 const Student = ({ data }) => {
   const deferredValue = useDeferredValue(data);

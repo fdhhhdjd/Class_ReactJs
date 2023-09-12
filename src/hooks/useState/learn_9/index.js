@@ -1,8 +1,8 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* STYLE
-import "./style.css";
+import './style.css';
 
 const UpdateImg = () => {
   const [imgPreview, setImgPreview] = useState(null);
@@ -10,24 +10,20 @@ const UpdateImg = () => {
   const handleImageChange = (e) => {
     setError(false);
     const selected = e.target.files[0];
-    const ALLOWED_TYPES = ["image/png", "image/jpeg", "image/jpg"];
+    const ALLOWED_TYPES = ['image/png', 'image/jpeg', 'image/jpg'];
     if (selected && ALLOWED_TYPES.includes(selected.type)) {
-      
       //* Đọc các nguồn dữ liệu trên máy tính của người dùng
-      let reader = new FileReader(); 
+      let reader = new FileReader();
 
       //* onloadend: được kích hoạt khi quá trình đọc kết thúc, thành công hoặc không thành công
       reader.onloadend = () => {
-
         //*result: Nội dung của nguồn dữ liệu sau khi đọc thành công
         setImgPreview(reader.result);
-
       };
 
       //* readAsDataURL: Bắt đầu đọc nội dung của blobOrFile, một khi hoàn thành, fileReader.result
       //* sẽ là một URL đại diện cho dữ liệu đọc được.
       reader.readAsDataURL(selected);
-
     } else {
       setError(true);
     }
@@ -40,9 +36,7 @@ const UpdateImg = () => {
           <div
             className="imgPreview"
             style={{
-              background: imgPreview
-                ? `url("${imgPreview}")no-repeat center/cover`
-                : "#131313",
+              background: imgPreview ? `url("${imgPreview}")no-repeat center/cover` : '#131313',
             }}
           >
             <>
@@ -52,19 +46,13 @@ const UpdateImg = () => {
                   <label htmlFor="fileUpload" className="customFileUpload">
                     Choose file
                   </label>
-                  <input
-                    type="file"
-                    id="fileUpload"
-                    onChange={handleImageChange}
-                  />
+                  <input type="file" id="fileUpload" onChange={handleImageChange} />
                   <span>(jpg, jpeg or png)</span>
                 </>
               )}
             </>
           </div>
-          {imgPreview && (
-            <button onClick={() => setImgPreview(null)}>Remove image</button>
-          )}
+          {imgPreview && <button onClick={() => setImgPreview(null)}>Remove image</button>}
         </div>
       </div>
     </>

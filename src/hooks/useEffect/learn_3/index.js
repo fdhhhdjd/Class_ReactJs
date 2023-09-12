@@ -1,20 +1,20 @@
 //* REACT
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 //* DATA
-import userData from "./data";
+import userData from './data';
 
 //* LIBRARY
-import {AiFillCloseCircle} from "react-icons/ai";
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 //* STYLE
-import "./style.css";
+import './style.css';
 
 const CheckBox = () => {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState([]);
   const [model, setModel] = useState(false);
-  const [tempimgSrc, setTempImgSrc] = useState("");
+  const [tempimgSrc, setTempImgSrc] = useState('');
 
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
@@ -24,13 +24,13 @@ const CheckBox = () => {
   const handleChange = (e, data) => {
     const { name, checked } = e.target;
     if (checked) {
-      if (name === "all") {
+      if (name === 'all') {
         setSelectedUser(users);
       } else {
         setSelectedUser([...selectedUser, data]);
       }
     } else {
-      if (name === "all") {
+      if (name === 'all') {
         setSelectedUser([]);
       } else {
         // if uncheked and specific checkbox remove specific field from selectedList
@@ -82,7 +82,7 @@ const CheckBox = () => {
         </tbody>
       </table>
 
-      <div className={model ? "model open" : "model"}>
+      <div className={model ? 'model open' : 'model'}>
         <img src={tempimgSrc} />
         <AiFillCloseCircle onClick={() => setModel(false)} />
       </div>
@@ -90,11 +90,7 @@ const CheckBox = () => {
         {selectedUser.map((item, i) => {
           return (
             <div className="pics" key={i} onClick={() => getImg(item.image)}>
-              <img
-                src={item.image}
-                alt=""
-                style={{ width: "100%", alignItems: "center" }}
-              />
+              <img src={item.image} alt="" style={{ width: '100%', alignItems: 'center' }} />
             </div>
           );
         })}

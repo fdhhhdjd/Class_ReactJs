@@ -1,5 +1,5 @@
-import React, { useId } from "react";
-import Form from "../components/form";
+import React, { useId } from 'react';
+import Form from '../components/form';
 
 const Learn_1 = () => {
   return (

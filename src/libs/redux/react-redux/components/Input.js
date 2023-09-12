@@ -1,28 +1,28 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* LIBRARY
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 
 //* REDUX
-import { addTodo } from "../stores/Action";
+import { addTodo } from '../stores/Action';
 
-import { showToastError, showToastSuccess } from "../../../../utils/toast";
+import { showToastError, showToastSuccess } from '../../../../utils/toast';
 
 //* STYLES
-import "../styles/input.css";
+import '../styles/input.css';
 
 const TodoInput = () => {
-  const [task, setTask] = useState("");
+  const [task, setTask] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (task === "") return showToastError("Please enter input 🙃");
+    if (task === '') return showToastError('Please enter input 🙃');
 
-    dispatch(addTodo(task), showToastSuccess(" Add task successfully😊 "));
+    dispatch(addTodo(task), showToastSuccess(' Add task successfully😊 '));
 
-    setTask("");
+    setTask('');
   };
 
   const handleChange = (e) => {

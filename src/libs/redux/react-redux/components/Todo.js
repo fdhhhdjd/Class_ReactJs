@@ -1,17 +1,17 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* LIB
-import { useDispatch } from "react-redux";
-import { toast } from "react-toastify";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useDispatch } from 'react-redux';
+import { toast } from 'react-toastify';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 //* REDUX
-import { removeTodo } from "../stores/Action";
+import { removeTodo } from '../stores/Action';
 
 //* STYLE
-import "../styles/todo.css";
-import { showToastError, showToastSuccess } from "../../../../utils/toast";
+import '../styles/todo.css';
+import { showToastError, showToastSuccess } from '../../../../utils/toast';
 
 const Todo = ({ id, task, completed, toggleTodo, updateTodo }) => {
   const dispatch = useDispatch();
@@ -20,24 +20,21 @@ const Todo = ({ id, task, completed, toggleTodo, updateTodo }) => {
   const handleUpload = (e) => {
     e.preventDefault();
     if (editStack === task) {
-      return showToastError("Please enter input 🙂 ");
+      return showToastError('Please enter input 🙂 ');
     }
     updateTodo(id, editStack);
-    showToastSuccess("Edit task successfully 😍");
+    showToastSuccess('Edit task successfully 😍');
     setEdit(false);
   };
 
   const removeItem = () => {
-    if (window.confirm("Are you sure delete task 🤔")) {
-      dispatch(
-        removeTodo({ id }),
-        showToastSuccess("Remove task successful 😒")
-      );
+    if (window.confirm('Are you sure delete task 🤔')) {
+      dispatch(removeTodo({ id }), showToastSuccess('Remove task successful 😒'));
     }
   };
   return (
     <>
-      <TransitionGroup className={completed ? "Todo completed" : "Todo"}>
+      <TransitionGroup className={completed ? 'Todo completed' : 'Todo'}>
         {edit ? (
           <CSSTransition key="editing" timeout={500} classNames="form">
             <form className="Todo-edit-form" onSubmit={handleUpload}>

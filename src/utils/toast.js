@@ -1,9 +1,9 @@
 // LIBRARY
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
 
 export const showToastSuccess = (message) => {
   toast.success(message, {
-    position: "top-right",
+    position: 'top-right',
     autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
@@ -14,7 +14,7 @@ export const showToastSuccess = (message) => {
 
 export const showToastError = (message) => {
   toast.error(message, {
-    position: "top-right",
+    position: 'top-right',
     autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,
@@ -25,7 +25,7 @@ export const showToastError = (message) => {
 
 export const showToastInfo = (message) => {
   toast.info(message, {
-    position: "top-right",
+    position: 'top-right',
     autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,

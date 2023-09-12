@@ -1,20 +1,20 @@
 //* REACT
-import React from "react";
+import React from 'react';
 
 //* LIB
-import { useDispatch, useSelector } from "react-redux";
-import { ToastContainer } from "react-toastify";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useDispatch, useSelector } from 'react-redux';
+import { ToastContainer } from 'react-toastify';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 //* COMPONENTS
-import TodoInput from "../components/Input";
-import Todo from "../components/Todo";
+import TodoInput from '../components/Input';
+import Todo from '../components/Todo';
 
 //* STORE
-import { completeTodo, updateTodo } from "../stores/Action";
+import { completeTodo, updateTodo } from '../stores/Action';
 
 //* STYLES
-import "../styles/todo_list.css";
+import '../styles/todo_list.css';
 
 const TodoList = () => {
   const dispatch = useDispatch();

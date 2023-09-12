@@ -1,17 +1,17 @@
 //* REACT
-import React from "react";
+import React from 'react';
 
 //* CSS
-import "./style.css";
+import './style.css';
 
 //* LIB
-import { Provider } from "react-redux";
+import { Provider } from 'react-redux';
 
 //* PAGE
-import TodoList from "./pages/TodoList";
+import TodoList from './pages/TodoList';
 
 //* STORE
-import store from "./stores/Store";
+import store from './stores/Store';
 
 const React_Redux = () => {
   return (

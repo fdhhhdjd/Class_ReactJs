@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Categories = ({ categories, activeCategory, onFilterItems }) => {
   return (
@@ -8,9 +8,7 @@ const Categories = ({ categories, activeCategory, onFilterItems }) => {
           <button
             type="button"
             key={index}
-            className={`${
-              activeCategory === category ? "filter-btn active" : "filter-btn"
-            }`}
+            className={`${activeCategory === category ? 'filter-btn active' : 'filter-btn'}`}
             onClick={() => onFilterItems(category)}
           >
             {category}

@@ -1,14 +1,14 @@
 //* REACT
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 // LIBRARY
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 //* DATA
-import { SliderData } from "./data"; 
+import { SliderData } from './data';
 
 //* CSS
-import "./Slider.css";
+import './Slider.css';
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);
@@ -39,17 +39,9 @@ const Slider = () => {
         <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
         {SliderData.map((item, index) => {
           return (
-            <div
-              key={index}
-              className={index === current ? "slide active" : "slide"}
-            >
+            <div key={index} className={index === current ? 'slide active' : 'slide'}>
               {index === current && (
-                <img
-                  src={item.image}
-                  key={index}
-                  alt="Travel image"
-                  className="image"
-                />
+                <img src={item.image} key={index} alt="Travel image" className="image" />
               )}
             </div>
           );
@@ -58,7 +50,7 @@ const Slider = () => {
           {Array.from({ length: 5 }).map((item, index) => (
             <div
               onClick={() => moveDot(index)}
-              className={current === index ? "dot active" : "dot"}
+              className={current === index ? 'dot active' : 'dot'}
             ></div>
           ))}
         </div>

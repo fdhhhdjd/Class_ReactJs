@@ -1,11 +1,11 @@
 //* REACT
-import React, { useReducer, useState } from "react";
+import React, { useReducer, useState } from 'react';
 
 //* LIBRARY
-import { ToastContainer } from "react-toastify";
+import { ToastContainer } from 'react-toastify';
 
 //* STYLE
-import "./style.css";
+import './style.css';
 
 //* REDUCER
 import {
@@ -14,30 +14,26 @@ import {
   editTodoAction,
   toggleEditModeAction,
   toggleTodoAction,
-} from "./Reducer/Todo/action";
-import { logger } from "./Reducer/Todo/logger";
-import todoReducer, { initState } from "./Reducer/Todo/reducer";
+} from './Reducer/Todo/action';
+import { logger } from './Reducer/Todo/logger';
+import todoReducer, { initState } from './Reducer/Todo/reducer';
 
 //* UTILS
-import {
-  showToastError,
-  showToastInfo,
-  showToastSuccess,
-} from "../../../utils/toast";
+import { showToastError, showToastInfo, showToastSuccess } from '../../../utils/toast';
 
 const TodoList = () => {
   const [state, dispatch] = useReducer(logger(todoReducer), initState);
 
   const { todos } = state;
 
-  const [newTodo, setNewTodo] = useState("");
-  const [editingText, setEditingText] = useState("");
+  const [newTodo, setNewTodo] = useState('');
+  const [editingText, setEditingText] = useState('');
 
   const addTodo = () => {
-    if (newTodo.trim() === "") return showToastError("Please,Input not empty!");
+    if (newTodo.trim() === '') return showToastError('Please,Input not empty!');
     dispatch(addTodoAction(newTodo));
     showToastSuccess(`Add ${newTodo} into todo success!`);
-    setNewTodo("");
+    setNewTodo('');
   };
 
   const toggleTodo = (index) => {
@@ -60,17 +56,15 @@ const TodoList = () => {
   const editTodo = (index) => {
     const originalText = todos[index].text;
 
-    if (editingText.trim() === "")
-      return showToastError("Please,Input not empty!");
+    if (editingText.trim() === '') return showToastError('Please,Input not empty!');
 
     dispatch(editTodoAction(index, editingText));
 
-    if (originalText === editingText)
-      return showToastInfo("Nothing changes input !");
+    if (originalText === editingText) return showToastInfo('Nothing changes input !');
 
     showToastSuccess(`Edit "${originalText}" to "${editingText}" success!`);
 
-    setEditingText("");
+    setEditingText('');
   };
 
   const handleAddTodoSubmit = (e) => {
@@ -104,39 +98,25 @@ const TodoList = () => {
                     onChange={(e) => setEditingText(e.target.value)}
                     className="todo-input todo-input-editing"
                   />
-                  <button
-                    onClick={() => editTodo(index)}
-                    className="save-button"
-                  >
+                  <button onClick={() => editTodo(index)} className="save-button">
                     Save
                   </button>
-                  <button
-                    onClick={() => toggleEditMode(index)}
-                    className="cancel-button"
-                  >
+                  <button onClick={() => toggleEditMode(index)} className="cancel-button">
                     Cancel
                   </button>
                 </>
               ) : (
                 <>
                   <span
-                    className={
-                      todo.completed ? "todo-text completed" : "todo-text"
-                    }
+                    className={todo.completed ? 'todo-text completed' : 'todo-text'}
                     onClick={() => toggleTodo(index)}
                   >
                     {todo.text}
                   </span>
-                  <button
-                    onClick={() => toggleEditMode(index)}
-                    className="edit-button"
-                  >
+                  <button onClick={() => toggleEditMode(index)} className="edit-button">
                     Edit
                   </button>
-                  <button
-                    onClick={() => deleteTodo(index)}
-                    className="delete-button"
-                  >
+                  <button onClick={() => deleteTodo(index)} className="delete-button">
                     Delete
                   </button>
                 </>

@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
 //* Hook
-import LearnOne from "./learn_1";
+import LearnOne from './learn_1';
 
 const UseDeferredValue = () => {
   return (

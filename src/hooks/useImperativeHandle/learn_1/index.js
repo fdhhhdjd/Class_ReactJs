@@ -1,5 +1,5 @@
-import React, { useRef, useEffect } from "react";
-import Child from "../components/child";
+import React, { useRef, useEffect } from 'react';
+import Child from '../components/child';
 
 const Learn_1 = () => {
   const myRef = useRef(3);

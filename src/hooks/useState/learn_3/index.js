@@ -1,61 +1,61 @@
-import React, { useState } from "react";
-import Form from "./form_item";
-import "./style.css";
+import React, { useState } from 'react';
+import Form from './form_item';
+import './style.css';
 
 const Forms = () => {
   const [values, setValues] = useState({
-    username: "",
-    email: "",
-    birthday: "",
-    password: "",
-    confirmPassword: "",
+    username: '',
+    email: '',
+    birthday: '',
+    password: '',
+    confirmPassword: '',
   });
   const inputs = [
     {
       id: 1,
-      name: "username",
-      type: "text",
-      placeholder: "Username",
+      name: 'username',
+      type: 'text',
+      placeholder: 'Username',
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
-      label: "Username",
-      pattern: "^[A-Za-z0-9]{3,16}$",
+      label: 'Username',
+      pattern: '^[A-Za-z0-9]{3,16}$',
       required: true,
     },
     {
       id: 2,
-      name: "email",
-      type: "email",
-      placeholder: "Email",
-      errorMessage: "It should be a valid email address!",
-      label: "Email",
+      name: 'email',
+      type: 'email',
+      placeholder: 'Email',
+      errorMessage: 'It should be a valid email address!',
+      label: 'Email',
       required: true,
     },
     {
       id: 3,
-      name: "birthday",
-      type: "date",
-      placeholder: "Birthday",
-      label: "Birthday",
+      name: 'birthday',
+      type: 'date',
+      placeholder: 'Birthday',
+      label: 'Birthday',
     },
     {
       id: 4,
-      name: "password",
-      type: "password",
-      placeholder: "Password",
+      name: 'password',
+      type: 'password',
+      placeholder: 'Password',
       errorMessage:
-        "Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!",
-      label: "Password",
+        'Password should be 8-20 characters and include at least 1 letter, 1 number and 1 special character!',
+      label: 'Password',
       pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,
     },
     {
       id: 5,
-      name: "confirmPassword",
-      type: "password",
-      placeholder: "Confirm Password",
+      name: 'confirmPassword',
+      type: 'password',
+      placeholder: 'Confirm Password',
       errorMessage: "Passwords don't match!",
-      label: "Confirm Password",
+      label: 'Confirm Password',
       pattern: values.password,
       required: true,
     },
@@ -73,12 +73,7 @@ const Forms = () => {
         <form onSubmit={handleSubmit}>
           <h1>Register</h1>
           {inputs.map((input) => (
-            <Form
-              key={input.id}
-              {...input}
-              value={values[input.name]}
-              onChange={onChange}
-            />
+            <Form key={input.id} {...input} value={values[input.name]} onChange={onChange} />
           ))}
           <button>Submit</button>
         </form>

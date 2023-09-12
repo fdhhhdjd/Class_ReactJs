@@ -1,17 +1,17 @@
 //* REACT
-import React, { Fragment, useId, useMemo, useState } from "react";
+import React, { Fragment, useId, useMemo, useState } from 'react';
 
 //* UTILS
-import { generateRandomStudentList } from "../../../utils";
+import { generateRandomStudentList } from '../../../utils';
 
 //* COMPONENTS
-import Student from "./components/student";
+import Student from './components/student';
 
 const randomStudents = generateRandomStudentList(500);
 
 const Learn_1 = () => {
   const id = useId();
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
 
   const handleSearchInput = (e) => {
     setSearchInput(e.target.value);
@@ -25,7 +25,7 @@ const Learn_1 = () => {
       ) : (
         <p>
           {student.name.slice(0, index)}
-          <span style={{ backgroundColor: "yellow" }}>
+          <span style={{ backgroundColor: 'yellow' }}>
             {student.name.slice(index, index + searchInput.length)}
           </span>
           {student.name.slice(index + searchInput.length)}
@@ -38,13 +38,7 @@ const Learn_1 = () => {
     <Fragment>
       <h2>Students</h2>
       <label htmlFor={id}>Search: </label>
-      <input
-        type="text"
-        name="name"
-        value={searchInput}
-        id={id}
-        onChange={handleSearchInput}
-      />
+      <input type="text" name="name" value={searchInput} id={id} onChange={handleSearchInput} />
       <hr />
       <div>
         <Student data={data} />

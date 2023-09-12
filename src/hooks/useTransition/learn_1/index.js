@@ -1,8 +1,8 @@
-import React, { useState, useTransition } from "react";
+import React, { useState, useTransition } from 'react';
 
 const Learn_1 = () => {
   const [isPending, setTransition] = useTransition();
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const [lists, setLists] = useState([]);
   const LIST_SIZE = 20000;
   const handleChange = (e) => {
@@ -19,7 +19,7 @@ const Learn_1 = () => {
     <React.Fragment>
       <input type="text" value={input} onChange={handleChange} />
       {isPending
-        ? "Loading..."
+        ? 'Loading...'
         : lists.map((item, index) => {
             return <div key={index}>{item}</div>;
           })}

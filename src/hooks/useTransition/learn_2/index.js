@@ -1,17 +1,11 @@
-import React, {
-  Fragment,
-  useId,
-  useMemo,
-  useState,
-  useTransition,
-} from "react";
-import { generateRandomStudentList } from "../../../utils";
+import React, { Fragment, useId, useMemo, useState, useTransition } from 'react';
+import { generateRandomStudentList } from '../../../utils';
 
 const randomStudents = generateRandomStudentList(5000);
 
 const Learn_2 = () => {
   const id = useId();
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState('');
   const [filterText, setFilterText] = useState();
   const [isPending, startTransition] = useTransition();
 
@@ -31,7 +25,7 @@ const Learn_2 = () => {
       ) : (
         <p>
           {student.name.slice(0, index)}
-          <span style={{ backgroundColor: "yellow" }}>
+          <span style={{ backgroundColor: 'yellow' }}>
             {student.name.slice(index, index + filterText.length)}
           </span>
           {student.name.slice(index + filterText.length)}
@@ -44,17 +38,11 @@ const Learn_2 = () => {
     <Fragment>
       <h2>Students</h2>
       <label htmlFor={id}>Search: </label>
-      <input
-        type="text"
-        name="name"
-        value={searchInput}
-        id={id}
-        onChange={handleSearchInput}
-      />
+      <input type="text" name="name" value={searchInput} id={id} onChange={handleSearchInput} />
       <hr />
       <div>
         {isPending ? (
-          "Loading..."
+          'Loading...'
         ) : (
           <>
             {data.map((student, index) => {

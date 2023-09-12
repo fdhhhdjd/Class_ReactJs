@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React, { memo } from 'react';
 
-const Content = ({onIncrement}) => {
-  console.log("re-render-content");
+const Content = ({ onIncrement }) => {
+  console.log('re-render-content');
   return (
     <>
       <div>content</div>

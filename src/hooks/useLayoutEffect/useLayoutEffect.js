@@ -1,5 +1,5 @@
 //* REACT
-import React, { Fragment } from "react";
+import React, { Fragment } from 'react';
 
 //* Hook
 // import LearnOne from "./learn_1";
@@ -13,12 +13,7 @@ const UseLayoutEffect = () => {
       {/* <LearnTow /> */}
       {/* <LearnThree /> */}
     </Fragment>
-  )
-}
+  );
+};
 
-export default UseLayoutEffect
-
-
-
-
-
+export default UseLayoutEffect;

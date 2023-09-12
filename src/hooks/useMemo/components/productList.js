@@ -1,17 +1,17 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from 'react';
 
 const ProductList = ({ products }) => {
-  const [sortBy, setSortBy] = useState("price-asc");
+  const [sortBy, setSortBy] = useState('price-asc');
 
   // Sử dụng useMemo để sắp xếp danh sách sản phẩm dựa trên sortBy
   const sortedProducts = useMemo(() => {
     const copyOfProducts = [...products]; // Tạo bản sao của danh sách sản phẩm để không làm ảnh hưởng đến danh sách gốc
 
-    if (sortBy === "price-asc") {
+    if (sortBy === 'price-asc') {
       return copyOfProducts.sort((a, b) => a.price - b.price);
-    } else if (sortBy === "price-desc") {
+    } else if (sortBy === 'price-desc') {
       return copyOfProducts.sort((a, b) => b.price - a.price);
-    } else if (sortBy === "name-asc") {
+    } else if (sortBy === 'name-asc') {
       return copyOfProducts.sort((a, b) => a.name.localeCompare(b.name));
     } else {
       // Mặc định sắp xếp theo giá tăng dần
@@ -19,7 +19,7 @@ const ProductList = ({ products }) => {
     }
   }, [products, sortBy]);
 
-  console.log("re-render");
+  console.log('re-render');
 
   return (
     <div>

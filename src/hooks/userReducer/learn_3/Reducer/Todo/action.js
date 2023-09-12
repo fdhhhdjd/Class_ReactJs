@@ -1,10 +1,4 @@
-import {
-  ADD_TODO,
-  DELETE_TODO,
-  EDIT_TODO,
-  TOGGLE_EDIT_MODE,
-  TOGGLE_TODO,
-} from "./type";
+import { ADD_TODO, DELETE_TODO, EDIT_TODO, TOGGLE_EDIT_MODE, TOGGLE_TODO } from './type';
 
 export const addTodoAction = (text) => {
   return {

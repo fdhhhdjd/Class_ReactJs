@@ -1,15 +1,15 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* LIBRARY
-import { FaStar } from "react-icons/fa";
+import { FaStar } from 'react-icons/fa';
 
 //* CSS
-import "./style.css";
+import './style.css';
 
 const Start = () => {
-  const [start, setStart] = useState(["", "", "", "", ""]);
-  const [rating, setRating] = useState("");
+  const [start, setStart] = useState(['', '', '', '', '']);
+  const [rating, setRating] = useState('');
   return (
     <>
       {start.map((item, i) => {
@@ -26,7 +26,7 @@ const Start = () => {
               <FaStar
                 size={100}
                 className="star"
-                color={countValue <= rating ? "#ffc107" : "#e4e5e9"}
+                color={countValue <= rating ? '#ffc107' : '#e4e5e9'}
                 onMouseEnter={() => setRating(countValue)}
                 onMouseLeave={() => setRating(rating)}
               />

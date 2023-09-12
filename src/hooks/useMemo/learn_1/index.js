@@ -1,11 +1,11 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* DATA
-import { productDummy } from "../../../data/productDummy";
+import { productDummy } from '../../../data/productDummy';
 
 //* COMPONENTS
-import ProductList from "../components/productList";
+import ProductList from '../components/productList';
 
 const Learn_1 = () => {
   const [products] = useState(productDummy);

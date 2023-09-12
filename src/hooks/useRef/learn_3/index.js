@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from 'react';
 
 const InputFocus = () => {
-  const [name, setName] = useState("");
+  const [name, setName] = useState('');
   const inputEl = useRef();
   const handleResetName = () => {
-    setName("");
+    setName('');
     inputEl.current.focus();
-    inputEl.current.value = "toi la tai heo Fa";
+    inputEl.current.value = 'toi la tai heo Fa';
   };
   useEffect(() => {
     inputEl.current.focus();

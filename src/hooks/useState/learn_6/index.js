@@ -1,14 +1,14 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* STYLE
-import "./choose.css";
+import './choose.css';
 
 //* IMG
-import img from "./img";
+import img from './img';
 const Choose = () => {
   const [select, setSelect] = useState(img[0]);
-  
+
   return (
     <div className="app">
       <div className="container">
@@ -19,7 +19,7 @@ const Choose = () => {
               src={item}
               key={index}
               alt="oto"
-              style={{ border: select === item ? "4px solid purple" : "" }}
+              style={{ border: select === item ? '4px solid purple' : '' }}
               onClick={() => setSelect(item)}
             />
           ))}

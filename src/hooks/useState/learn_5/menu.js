@@ -1,5 +1,5 @@
 //* REACT
-import React from "react";
+import React from 'react';
 
 const Menu = ({ items }) => {
   return (
@@ -24,4 +24,3 @@ const Menu = ({ items }) => {
 };
 
 export default Menu;
-  

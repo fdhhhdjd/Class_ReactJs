@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Content from "./components/content";
+import React, { useState } from 'react';
+import Content from './components/content';
 
 const Memo = () => {
   const [count, setCount] = useState(0);
@@ -10,7 +10,7 @@ const Memo = () => {
   console.log('re-render Page Main');
   return (
     <>
-      <Content/>
+      <Content />
       <h1>{count}</h1>
       <button onClick={handleIncrement}>Click Me !!!</button>
     </>

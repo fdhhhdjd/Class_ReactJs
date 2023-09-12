@@ -1,31 +1,31 @@
 //* REACT
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 //* STYLE
-import "./style.css";
+import './style.css';
 
-//* CATEGORIES 
-import Categories from "./categori_item";
+//* CATEGORIES
+import Categories from './categori_item';
 
 //* DATA
-import items from "./data";
+import items from './data';
 
 //* ASSETS
-import logo from "../../../assets/images/logo.png";
+import logo from '../../../assets/images/logo.png';
 
 //* MENU
-import Menu from "./menu";
+import Menu from './menu';
 
-const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 
 const Home = () => {
   const [menuItem, setMenuItem] = useState(items);
-  const [activeCategory, setActiveCategory] = useState("");
+  const [activeCategory, setActiveCategory] = useState('');
   const [categories, setCategories] = useState(allCategories);
 
   const handleFilterItems = (category) => {
     setActiveCategory(category);
-    if (category === "all") {
+    if (category === 'all') {
       setMenuItem(items);
       return;
     }

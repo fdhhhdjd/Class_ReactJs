@@ -1,4 +1,4 @@
-import * as TYPES from "./ActionType";
+import * as TYPES from './ActionType';
 
 export const completeTodo = (todo) => ({
   type: TYPES.COMPLETE_TODO,

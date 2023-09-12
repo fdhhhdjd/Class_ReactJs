@@ -1,9 +1,8 @@
 //* REACT
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 //* LIBRARY
-import axios from "axios";
-
+import axios from 'axios';
 
 function Learn_1() {
   const [data, setData] = useState([]);
@@ -12,7 +11,7 @@ function Learn_1() {
   useEffect(() => {
     // Hàm này sẽ chạy sau khi component được render lần đầu tiên
     // Gọi API để tải dữ liệu mặc định
-    fetchData("posts");
+    fetchData('posts');
   }, []);
 
   const fetchData = (endpoint) => {
@@ -28,7 +27,7 @@ function Learn_1() {
         setLoading(false);
       })
       .catch((error) => {
-        console.error("Lỗi khi tải dữ liệu từ API:", error);
+        console.error('Lỗi khi tải dữ liệu từ API:', error);
         // Đánh dấu rằng việc tải dữ liệu đã hoàn thành (có lỗi)
         setLoading(false);
       });
@@ -37,9 +36,9 @@ function Learn_1() {
   return (
     <div>
       <h1>Danh sách bài viết</h1>
-      <button onClick={() => fetchData("posts")}>Get Post</button>
-      <button onClick={() => fetchData("comments")}>Get Comment</button>
-      <button onClick={() => fetchData("users")}>Get User</button>
+      <button onClick={() => fetchData('posts')}>Get Post</button>
+      <button onClick={() => fetchData('comments')}>Get Comment</button>
+      <button onClick={() => fetchData('users')}>Get User</button>
       {loading ? (
         <div className="loading-indicator">
           <p>Đang tải dữ liệu...</p>

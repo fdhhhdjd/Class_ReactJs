@@ -1,11 +1,11 @@
-import React, { useReducer } from "react";
+import React, { useReducer } from 'react';
 
 //* Init state
 const initState = 0;
 
 //* Actions
-const UP_ACTION = "UP";
-const DOWN_ACTION = "DOWN";
+const UP_ACTION = 'UP';
+const DOWN_ACTION = 'DOWN';
 
 //* Reducer
 
