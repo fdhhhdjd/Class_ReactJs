@@ -9,6 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import 'react-toastify/dist/ReactToastify.css';
 
+//* ROOT
 const root = ReactDOM.createRoot(document.getElementById('root'), {
   identifierPrefix: 'tai_dev',
 });

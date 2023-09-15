@@ -8,6 +8,7 @@ import React, { Fragment } from 'react';
 import Lib from './libs/lib';
 
 function App() {
+  console.log(cache);
   return (
     <Fragment>
       {/* HOOK */}

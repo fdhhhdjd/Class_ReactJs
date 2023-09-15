@@ -17,12 +17,15 @@ const Slider = () => {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
+
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
+
   const moveDot = (index) => {
     setCurrent(index);
   };
+
   useEffect(() => {
     const slider = setInterval(() => {
       setCurrent(current === length - 1 ? 0 : current + 1);
