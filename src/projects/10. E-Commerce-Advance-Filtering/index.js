@@ -8,7 +8,7 @@ import Sidebar from './Sidebar/Sidebar';
 import Card from './components/Card';
 import './styles/main.css';
 
-function App() {
+function Project_10() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   // ----------- Input Filter -----------
@@ -77,4 +77,4 @@ function App() {
   );
 }
 
-export default App;
+export default Project_10;

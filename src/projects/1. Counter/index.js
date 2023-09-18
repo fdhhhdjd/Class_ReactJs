@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-function Counter() {
+function Project_1() {
   const [count, setCount] = useState(0);
 
   const increment = () => setCount(count + 1);
@@ -25,4 +25,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default Project_1;

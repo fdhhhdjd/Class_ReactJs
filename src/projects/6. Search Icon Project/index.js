@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import './style.css';
 
-function Learn_6() {
+function Project_6() {
   const [showInput, setShowInput] = useState(false);
   const [bgColor, setBgColor] = useState('white');
 
@@ -25,4 +25,4 @@ function Learn_6() {
   );
 }
 
-export default Learn_6;
+export default Project_6;

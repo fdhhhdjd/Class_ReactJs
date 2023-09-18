@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-function Learn_7() {
+function Project_7() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const testimonials = [
     {
@@ -38,4 +38,4 @@ function Learn_7() {
   );
 }
 
-export default Learn_7;
+export default Project_7;

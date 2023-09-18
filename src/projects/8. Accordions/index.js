@@ -1,7 +1,7 @@
 import Accordion from './Accordion';
 import { accordionData } from './utils/content';
 
-const App = () => {
+const Project_8 = () => {
   return (
     <div>
       <div className="accordion">
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Project_8;

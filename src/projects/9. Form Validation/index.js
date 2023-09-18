@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './style.css';
 
-function Learn_9() {
+function Project_9() {
   const [username, setusername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -105,4 +105,4 @@ function Learn_9() {
   );
 }
 
-export default Learn_9;
+export default Project_9;
