@@ -8,7 +8,10 @@ import React, { Fragment } from 'react';
 // import Lib from './libs/lib';
 
 //* CUSTOM HOOk
-import CustomHook from './custom_hooks';
+// import CustomHook from './custom_hooks';
+
+//* PROJECT
+import Projects from './projects';
 
 function App() {
   return (
@@ -20,7 +23,10 @@ function App() {
       {/* <Lib /> */}
 
       {/* Custom Hook */}
-      <CustomHook />
+      {/* <CustomHook /> */}
+
+      {/* Projects */}
+      <Projects />
     </Fragment>
   );
 }
