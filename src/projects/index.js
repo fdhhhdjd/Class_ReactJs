@@ -1,6 +1,7 @@
 import React from 'react';
 
 //* PROJECT
+// import Project_1 from './1. Counter';
 // import Project_3 from './3. Meals API Project';
 // import Project_4 from './4. Calculator';
 // import Project_5 from './5. Color Toggler';
@@ -13,6 +14,7 @@ import React from 'react';
 const Projects = () => {
   return (
     <>
+      {/* <Project_1 /> */}
       {/* <Project_3 /> */}
       {/* <Project_4 /> */}
       {/* <Project_5 /> */}
