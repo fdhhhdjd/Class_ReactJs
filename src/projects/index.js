@@ -9,7 +9,7 @@ import React from 'react';
 // import Learn_7 from './7. Testamonails';
 // import Learn_8 from './8. Accordions';
 // import Learn_9 from './9. Form Validation';
-// import Project_10 from './10.E-Commerce-Advance-Filtering';
+// import Project_10 from './10. E-Commerce-Advance-Filtering';
 
 const Projects = () => {
   return (
