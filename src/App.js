@@ -20,7 +20,7 @@ function App() {
   return (
     <Fragment>
       {/* Prop drilling */}
-      <Prop_Drilling />
+      {/* <Prop_Drilling /> */}
 
       {/* HOOK */}
       {/* <Hook /> */}
