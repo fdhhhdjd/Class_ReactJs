@@ -5,17 +5,22 @@ import React, { Fragment } from 'react';
 // import Hook from "./hooks/hook";
 
 //* LIB
-import Lib from './libs/lib';
+// import Lib from './libs/lib';
+
+//* CUSTOM HOOk
+import CustomHook from './custom_hooks';
 
 function App() {
-  console.log(cache);
   return (
     <Fragment>
       {/* HOOK */}
       {/* <Hook /> */}
 
       {/* LIB */}
-      <Lib />
+      {/* <Lib /> */}
+
+      {/* Custom Hook */}
+      <CustomHook />
     </Fragment>
   );
 }
