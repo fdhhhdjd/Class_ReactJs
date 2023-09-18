@@ -5,6 +5,7 @@ import React from 'react';
 // import Project_4 from './4. Calculator';
 // import Project_5 from './5. Color Toggler';
 // import Project_6 from './6. Search Icon Project';
+// import Learn_7 from './7. Testamonails';
 // import Project_10 from './10.E-Commerce-Advance-Filtering';
 
 const Projects = () => {
@@ -14,6 +15,7 @@ const Projects = () => {
       {/* <Project_4 /> */}
       {/* <Project_5 /> */}
       {/* <Project_6 /> */}
+      {/* <Learn_7 /> */}
       {/* <Project_10 /> */}
     </>
   );
