@@ -5,7 +5,7 @@ import React, { Fragment } from 'react';
 import Prop_Drilling from './prop_drilling';
 
 //* HOOK
-// import Hook from "./hooks/hook";
+import Hook from './hooks/hook';
 
 //* LIB
 // import Lib from './libs/lib';
@@ -23,7 +23,7 @@ function App() {
       {/* <Prop_Drilling /> */}
 
       {/* HOOK */}
-      {/* <Hook /> */}
+      <Hook />
 
       {/* LIB */}
       {/* <Lib /> */}

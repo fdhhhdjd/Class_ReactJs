@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 
 //* HOOK
-// import UseState from "./useState/useState";
+import UseState from './useState/useState';
 // import UseEffect from "./useEffect/useEffect";
 // import UseRef from "./useRef/useRef";
 // import UseLayoutEffect from "./useLayoutEffect/useLayoutEffect";
@@ -22,7 +22,7 @@ function Hook() {
   return (
     <Fragment>
       {/* 1. useState */}
-      {/* <UseState /> */}
+      <UseState />
 
       {/* 2. useEffect */}
       {/* <UseEffect /> */}
