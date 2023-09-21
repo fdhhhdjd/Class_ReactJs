@@ -4,9 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-//* LIBRARY
-import { BrowserRouter as Router } from 'react-router-dom';
-
 import 'react-toastify/dist/ReactToastify.css';
 
 //* ROOT
@@ -15,9 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'), {
 });
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <App />
   </React.StrictMode>
 );
 
