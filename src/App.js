@@ -2,12 +2,10 @@
 import React, { Fragment } from 'react';
 
 //* PROP
-// import Prop_Drilling from './prop_drilling';
+import Prop_Drilling from './prop_drilling';
 
 //* HOOK
 // import Hook from './hooks/hook';
-
-//* ROUTER
 import RouterMain from './routers/router';
 
 //* LIB
