@@ -16,6 +16,7 @@ import BookLayout from './4.Nested Routes/layouts/BookLayout';
 import { BookRoutes } from './4.Nested Routes/routes/BookRoute';
 import LinkComponent from './6. Link Component';
 import NavLinkComponent from './7.NavLink Component';
+import NavigateLearn8 from './8.useNavigate Hook';
 
 const Main = () => {
   return (
@@ -23,14 +24,7 @@ const Main = () => {
       {/* ------- */}
       {/* <nav>
         <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/book">Book</Link>
+          <li>useNavigateComponent
           </li>
         </ul>
       </nav> */}
@@ -49,6 +43,7 @@ const Main = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/detail/:id" element={<Detail />} />
+            <Route path="/navigate" element={<NavigateLearn8 />} />
 
             {/* Step 1 --- Nested Routes */}
             {/* <Route path="/book">
