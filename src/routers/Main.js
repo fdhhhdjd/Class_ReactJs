@@ -15,6 +15,7 @@ import New from './4.Nested Routes/New';
 import BookLayout from './4.Nested Routes/layouts/BookLayout';
 import { BookRoutes } from './4.Nested Routes/routes/BookRoute';
 import LinkComponent from './6. Link Component';
+import NavLinkComponent from './7.NavLink Component';
 
 const Main = () => {
   return (
@@ -34,7 +35,8 @@ const Main = () => {
         </ul>
       </nav> */}
 
-      <LinkComponent />
+      {/* <LinkComponent /> */}
+      <NavLinkComponent />
 
       {/* ------- */}
       <React.Fragment>
