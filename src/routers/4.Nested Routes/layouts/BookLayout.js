@@ -39,7 +39,14 @@ const BookLayout = () => {
       <input
         type="number"
         value={number}
-        onChange={(e) => setSearchNumber({ n: e.target.value })}
+        onChange={(e) =>
+          setSearchNumber(
+            { n: e.target.value },
+            {
+              replace: true,
+            }
+          )
+        }
       />
     </>
   );
