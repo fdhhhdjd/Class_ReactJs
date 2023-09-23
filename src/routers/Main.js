@@ -17,6 +17,7 @@ import { BookRoutes } from './4.Nested Routes/routes/BookRoute';
 import LinkComponent from './6. Link Component';
 import NavLinkComponent from './7.NavLink Component';
 import NavigateLearn8 from './8.useNavigate Hook';
+import Learn_9 from './9.Search Parameters';
 
 const Main = () => {
   return (
@@ -44,6 +45,7 @@ const Main = () => {
             <Route path="/about" element={<About />} />
             <Route path="/detail/:id" element={<Detail />} />
             <Route path="/navigate" element={<NavigateLearn8 />} />
+            <Route path="/search" element={<Learn_9 />} />
 
             {/* Step 1 --- Nested Routes */}
             {/* <Route path="/book">
