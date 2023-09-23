@@ -4,7 +4,10 @@ import { useNavigate } from 'react-router-dom';
 const NavigateLearn8 = () => {
   const navigate = useNavigate();
   setTimeout(() => {
-    navigate('/');
+    // Step 1
+    // navigate('/');
+    // Step 2
+    navigate(-1);
   }, 3000);
   return (
     <>
