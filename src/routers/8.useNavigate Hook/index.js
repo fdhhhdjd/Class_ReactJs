@@ -5,9 +5,11 @@ const NavigateLearn8 = () => {
   const navigate = useNavigate();
   setTimeout(() => {
     // Step 1
-    // navigate('/');
+    navigate('/', {
+      state: 'Error Page',
+    });
     // Step 2
-    navigate(-1);
+    // navigate(-1);
   }, 3000);
   return (
     <>
