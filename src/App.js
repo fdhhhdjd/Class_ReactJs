@@ -2,11 +2,11 @@
 import React, { Fragment } from 'react';
 
 //* PROP
-import Prop_Drilling from './prop_drilling';
+// import Prop_Drilling from './prop_drilling';
 
 //* HOOK
 // import Hook from './hooks/hook';
-import RouterMain from './routers/router';
+// import RouterMain from './routers/router';
 
 //* LIB
 // import Lib from './libs/lib';
@@ -16,6 +16,9 @@ import RouterMain from './routers/router';
 
 //* PROJECT
 // import Projects from './projects';
+
+//* FIREBASE
+import Firebase from './firebase/index';
 
 function App() {
   return (
@@ -27,7 +30,7 @@ function App() {
       {/* <Hook /> */}
 
       {/* ROUTER */}
-      <RouterMain />
+      {/* <RouterMain /> */}
 
       {/* LIB */}
       {/* <Lib /> */}
@@ -37,6 +40,9 @@ function App() {
 
       {/* Projects */}
       {/* <Projects /> */}
+
+      {/* Firebase */}
+      <Firebase />
     </Fragment>
   );
 }

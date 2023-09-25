@@ -10,6 +10,7 @@ const Forms = () => {
     password: '',
     confirmPassword: '',
   });
+
   const inputs = [
     {
       id: 1,
@@ -19,6 +20,7 @@ const Forms = () => {
       errorMessage:
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: 'Username',
+
       pattern: '^[A-Za-z0-9]{3,16}$',
       required: true,
     },
@@ -63,6 +65,7 @@ const Forms = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
