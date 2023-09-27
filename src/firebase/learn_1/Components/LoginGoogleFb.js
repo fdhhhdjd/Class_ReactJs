@@ -21,7 +21,7 @@ const LoginGoogleFb = () => {
   return (
     <>
       <div className="login  ">
-        <div className="google-btn " onClick={handleLoginGoogle}>
+        <div className="google-btn" onClick={handleLoginGoogle}>
           <div className="google-icon-wrapper ">
             <Lottie options={defaultOptions} />
           </div>

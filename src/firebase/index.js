@@ -9,8 +9,8 @@ const index = () => {
   return (
     <>
       <Provider store={store}>
-        <ToastContainer position="top-center" />
         <Router>
+          <ToastContainer position="top-center" />
           <TodoListPro />
         </Router>
       </Provider>

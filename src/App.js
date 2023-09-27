@@ -5,7 +5,7 @@ import React, { Fragment } from 'react';
 // import Prop_Drilling from './prop_drilling';
 
 //* HOOK
-// import Hook from './hooks/hook';
+import Hook from './hooks/hook';
 // import RouterMain from './routers/router';
 
 //* LIB
@@ -18,7 +18,7 @@ import React, { Fragment } from 'react';
 // import Projects from './projects';
 
 //* FIREBASE
-import Firebase from './firebase/index';
+// import Firebase from './firebase/index';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       {/* <Prop_Drilling /> */}
 
       {/* HOOK */}
-      {/* <Hook /> */}
+      <Hook />
 
       {/* ROUTER */}
       {/* <RouterMain /> */}
@@ -42,7 +42,7 @@ function App() {
       {/* <Projects /> */}
 
       {/* Firebase */}
-      <Firebase />
+      {/* <Firebase /> */}
     </Fragment>
   );
 }

@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import * as facebook from '../Json/facebook.json';
 import { loginFacebookInitial } from '../Redux/Actions';
 import '../Styles/LoginGoogleFb.css';
-
 const defaultOptions = {
   loop: true,
   autoplay: true,
@@ -12,7 +11,6 @@ const defaultOptions = {
     preserveAspectRatio: 'xMidYMid slice',
   },
 };
-
 const LoginFacebook = () => {
   const dispatch = useDispatch();
   const handleLoginFB = () => {
