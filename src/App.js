@@ -18,7 +18,7 @@ import Hook from './hooks/hook';
 // import Projects from './projects';
 
 //* FIREBASE
-// import Firebase from './firebase/index';
+import Firebase from './firebase/index';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       {/* <Prop_Drilling /> */}
 
       {/* HOOK */}
-      <Hook />
+      {/* <Hook /> */}
 
       {/* ROUTER */}
       {/* <RouterMain /> */}
@@ -42,7 +42,7 @@ function App() {
       {/* <Projects /> */}
 
       {/* Firebase */}
-      {/* <Firebase /> */}
+      <Firebase />
     </Fragment>
   );
 }
