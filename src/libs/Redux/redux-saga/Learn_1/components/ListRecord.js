@@ -33,21 +33,21 @@ const ListRecord = () => {
               <h1>....Loading</h1>
             ) : (
               <>
-                {Object.entries(data).length !== 0 ? (
-                  Object.keys(data).map((id, index) => {
-                    return (
-                      <React.Fragment key={index}>
-                        <table className="table table-bordered table-striped">
-                          <thead className="thead-dark">
-                            <tr>
-                              <th scope="col">No.</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Mobile</th>
-                              <th scope="col">Email</th>
-                              <th scope="col">Address</th>
-                              <th scope="col">Action</th>
-                            </tr>
-                          </thead>
+                <table className="table table-bordered table-striped">
+                  <thead className="thead-dark">
+                    <tr>
+                      <th scope="col">No.</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Mobile</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                  </thead>
+                  {Object.entries(data).length !== 0 &&
+                    Object.keys(data).map((id, index) => {
+                      return (
+                        <React.Fragment key={index}>
                           <tbody>
                             <tr key={id}>
                               <th scope="row">{index + 1}</th>
@@ -73,13 +73,11 @@ const ListRecord = () => {
                               </td>
                             </tr>
                           </tbody>
-                        </table>
-                      </React.Fragment>
-                    );
-                  })
-                ) : (
-                  <h1>Empty Data</h1>
-                )}
+                        </React.Fragment>
+                      );
+                    })}
+                </table>
+                {Object.entries(data).length === 0 && <h1>Empty Data</h1>}
               </>
             )}
           </div>
