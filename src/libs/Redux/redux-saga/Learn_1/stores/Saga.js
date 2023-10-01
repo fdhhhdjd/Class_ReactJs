@@ -46,7 +46,6 @@ export function* onDeleteContact() {
 function* onAddContactAsync({ payload: contacts }) {
   try {
     yield firebaseDb.child('contacts_saga').push(contacts);
-    console.log('runnn2222');
 
     yield put(addContactsSuccess());
   } catch (error) {
@@ -54,7 +53,6 @@ function* onAddContactAsync({ payload: contacts }) {
   }
 }
 export function* onAddContact() {
-  console.log('runnn1111');
   yield takeLatest(types.ADD_CONTACTS_STARTS, onAddContactAsync);
 }
 
