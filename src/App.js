@@ -18,7 +18,7 @@ import Lib from './libs/lib';
 // import Projects from './projects';
 
 //* FIREBASE
-import Firebase from './firebase/index';
+// import Firebase from './firebase/index';
 
 function App() {
   return (
