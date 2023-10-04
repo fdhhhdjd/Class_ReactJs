@@ -1,5 +1,5 @@
-import React from 'react';
 import { useQuery } from '@tanstack/react-query';
+import React from 'react';
 import MutationPage from '../mutation/Mutation';
 
 const Posts = () => {
@@ -24,6 +24,7 @@ const Posts = () => {
 
   return (
     <>
+      <hr />
       <MutationPage />
       <hr />
       <button onClick={() => refetch()}>Refetch Data</button>

@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { useMutation } from '@tanstack/react-query';
-import { BASE_URL } from '../..';
+import { BASE_URL } from '..';
 
 const MutationPage = () => {
   const createUser = async (userData) => {

@@ -48,6 +48,7 @@
     "start": "PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "server":"json-server --watch ./src/api/db.json --port 5000",
     "lint": "eslint . --ext .js --fix",
     "eject": "react-scripts eject",
     "prepare": "husky install",
