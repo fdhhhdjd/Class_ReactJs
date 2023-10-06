@@ -58,9 +58,7 @@ const Main = () => {
             {/* <Route path="/book" element={<BookLayout />}>
               <Route index element={<BookStep2 />} />
               <Route path=":id" element={<BookDetail />} />
-              <Route path="new" element={<New />} />
-            </Route> */}
-
+              <Route path="new" element={<New />} n
             {/* Step 3 --- Nested Routes */}
             <Route path="/book/*" element={<BookRoutes />} />
             <Route path="*" element={<NotFound />} />
