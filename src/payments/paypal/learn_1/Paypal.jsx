@@ -60,8 +60,7 @@ const Paypal = () => {
     >
       <PayPalScriptProvider
         options={{
-          clientId:
-            'AfxQpA6p4JZgxcRsjhRIxZKeRvL0qkU8zah4E_XbvNmzjTFrPFH2b_yPjSXnPwapS1QwlPnMXvASpV7O',
+          clientId: process.env.REACT_APP_PAYPAL,
           currency: 'USD',
         }}
       >
