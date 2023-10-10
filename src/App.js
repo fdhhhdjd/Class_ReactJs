@@ -1,5 +1,5 @@
 //* REACT
-import React, { Fragment } from 'react';
+import React from 'react';
 
 //* PROP
 // import Prop_Drilling from './prop_drilling';
@@ -22,7 +22,7 @@ import Lib from './libs/lib';
 
 function App() {
   return (
-    <Fragment>
+    <React.Fragment>
       {/* Prop drilling */}
       {/* <Prop_Drilling /> */}
 
@@ -43,7 +43,7 @@ function App() {
 
       {/* Firebase */}
       {/* <Firebase /> */}
-    </Fragment>
+    </React.Fragment>
   );
 }
 
