@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 //* ROOT
 const root = ReactDOM.createRoot(document.getElementById('root'), {
-  identifierPrefix: 'Tai_Dev',
+  identifierPrefix: 'Class_Tai_Dev',
 });
 root.render(<App />);
 
