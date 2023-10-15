@@ -48,17 +48,17 @@ const Main = () => {
             <Route path="/search" element={<Learn_9 />} />
 
             {/* Step 1 --- Nested Routes */}
-            {/* <Route path="/book">
+            <Route path="/book">
               <Route index element={<Book />} />
               <Route path=":id" element={<BookDetail />} />
               <Route path="new" element={<New />} />
-            </Route> */}
+            </Route>
 
             {/* Step 2 --- Nested Routes */}
             {/* <Route path="/book" element={<BookLayout />}>
               <Route index element={<BookStep2 />} />
               <Route path=":id" element={<BookDetail />} />
-              <Route path="new" element={<New />} n
+              <Route path="new" element={<New />}
             {/* Step 3 --- Nested Routes */}
             <Route path="/book/*" element={<BookRoutes />} />
             <Route path="*" element={<NotFound />} />
