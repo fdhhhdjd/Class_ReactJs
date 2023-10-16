@@ -60,6 +60,14 @@
 				"varsIgnorePattern": "^_",
 				"argsIgnorePattern": "^_"
 			}
+		],
+		"react/jsx-no-bind": [
+			"error",
+			{
+				"allowArrowFunctions": true,
+				"allowBind": false,
+				"ignoreRefs": true
+			}
 		]
 	},
 	"settings": {
