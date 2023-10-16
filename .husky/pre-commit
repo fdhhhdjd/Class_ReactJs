@@ -10,14 +10,25 @@ npm run lint-staged
 # Infomation for me success or error
 echo "---- Oh my good prefetch 🔥 ----"
 
-# Get the commit message from the latest commit
-COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+# Kiểm tra xem tệp commit message tồn tại không
+if [ -f "$1" ] && [ -s "$1" ]; then
+  # Lấy commit message từ tệp
+  COMMIT_MESSAGE=$(cat "$1")
 
-# Check if the commit message contains the word "feat" and the environment variable is not set
-if echo "$COMMIT_MESSAGE" | grep -qi "feat" && [ -z "$VERSION_BUMPED" ]; then
-  export VERSION_BUMPED=true
-  # Run standard-version to bump the version
-  npx standard-version
+  # Kiểm tra xem commit message chứa "feat" hoặc "feature" không
+  if echo "$COMMIT_MESSAGE" | grep -qiE "(feat|feature)"; then
+    # Xuất biến môi trường để thông báo về việc tăng version
+    export VERSION_BUMPED=true
+    # Chạy standard-version để tăng version
+    npx standard-version
+  else
+    # Commit message không chứa "feat" hoặc "feature"
+    echo "Commit message must contain 'feat' or 'feature'."
+    exit 1
+  fi
+else
+  # Tệp commit message không tồn tại hoặc trống
+  echo "Commit message file does not exist or is empty."
 fi
 
 # Push to remote repository (origin) on successful commit

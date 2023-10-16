@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.24](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.21...v0.0.24) (2023-10-16)
+
+
+### Features
+
+* create file hello ([36461cb](https://github.com/fdhhhdjd/Class_ReactJs/commit/36461cb1db01d000a35737947b55d87680dcafbb))
+
+### [0.0.23](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.21...v0.0.23) (2023-10-16)
+
+
+### Features
+
+* create file hello ([36461cb](https://github.com/fdhhhdjd/Class_ReactJs/commit/36461cb1db01d000a35737947b55d87680dcafbb))
+
+### [0.0.22](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.21...v0.0.22) (2023-10-16)
+
+
+### Features
+
+* create file hello ([36461cb](https://github.com/fdhhhdjd/Class_ReactJs/commit/36461cb1db01d000a35737947b55d87680dcafbb))
+
 ### [0.0.21](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.5...v0.0.21) (2023-10-16)
 
 
