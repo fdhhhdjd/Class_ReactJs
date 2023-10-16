@@ -7,6 +7,8 @@ import viteLogo from '/vite.svg';
 
 function App() {
 	const [count, setCount] = useState(0);
+
+	console.info(import.meta.env.VITE_NODE_ENV);
 	return (
 		<>
 			<div>

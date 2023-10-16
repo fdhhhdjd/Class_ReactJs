@@ -4,24 +4,29 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start-env": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts start'",
+    "build-dev": "VITE_NODE_ENV=dev env-cmd -f .env.${VITE_NODE_ENV} vite build",
+    "build-staging": "VITE_NODE_ENV=staging env-cmd -f .env.${VITE_NODE_ENV} vite build",
+    "build-pro": "VITE_NODE_ENV=pro env-cmd -f .env.${VITE_NODE_ENV} vite build",
+    "start": "env-cmd -f .env.${VITE_NODE_ENV} vite",
+    "start-env": "VITE_NODE_ENV=dev npm run start",
+    "start-staging": "VITE_NODE_ENV=staging npm run start",
+    "start-pro": "VITE_NODE_ENV=pro npm run start",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore && echo \"Tai Dev Check Eslint ✅\"",
-		"lint:fix": "eslint . --fix --ext .ts,.vue",
+    "lint:fix": "eslint . --fix --ext .ts,.vue",
     "prettier": "prettier --write",
-		"format": "prettier --write src/",
+    "format": "prettier --write src/",
     "preview": "vite preview",
     "prepare": "husky install",
     "pre-commit": "echo \"[Husky] pre-commit\"",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "release": "standard-version"
   },
   "lint-staged": {
-		"src/**/*.{js,jsx}": [
-			"npm run lint",
-			"npm run prettier"
-		]
-	},
+    "src/**/*.{js,jsx}": [
+      "npm run lint",
+      "npm run prettier"
+    ]
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npx lint-staged"
@@ -33,6 +38,7 @@
     ]
   },
   "dependencies": {
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -51,8 +57,9 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "vite": "^4.4.5",
-    "lint-staged": "^14.0.1"
+    "standard-version": "^9.5.0",
+    "vite": "^4.4.5"
   }
 }
