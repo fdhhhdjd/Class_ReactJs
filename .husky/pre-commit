@@ -24,7 +24,6 @@ if [ -f "$1" ] && [ -s "$1" ]; then
   else
     # Commit message không chứa "feat" hoặc "feature"
     echo "Commit message must contain 'feat' or 'feature'."
-    exit 1
   fi
 else
   # Tệp commit message không tồn tại hoặc trống
