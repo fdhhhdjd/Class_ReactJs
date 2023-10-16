@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start-env": "sh -ac '. .env.${REACT_APP_ENV}; react-scripts start'",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore && echo \"Tai Dev Check Eslint ✅\"",
 		"lint:fix": "eslint . --fix --ext .ts,.vue",
     "prettier": "prettier --write",
