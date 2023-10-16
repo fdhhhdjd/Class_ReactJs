@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.4...v0.0.5) (2023-10-16)
+
+
+### Features
+
+* create file hello ([81cdd0f](https://github.com/fdhhhdjd/Class_ReactJs/commit/81cdd0f9a4871f667c361e0ca5acbe47c9c1c043))
+
 ### [0.0.4](https://github.com/fdhhhdjd/Class_ReactJs/compare/v0.0.3...v0.0.4) (2023-10-16)
 
 
