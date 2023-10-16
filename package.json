@@ -1,7 +1,7 @@
 {
   "name": "e-commerce",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.3",
   "type": "module",
   "scripts": {
     "build-dev": "VITE_NODE_ENV=dev env-cmd -f .env.${VITE_NODE_ENV} vite build",
