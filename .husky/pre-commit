@@ -16,7 +16,7 @@ if [ -f "$1" ] && [ -s "$1" ]; then
   COMMIT_MESSAGE=$(cat "$1")
 
   # Kiểm tra xem commit message chứa "feat" hoặc "feature" không
-  if echo "$COMMIT_MESSAGE" | grep -qiE "(feat|feature)"; then
+  if echo "$COMMIT_MESSAGE" | grep -qiE "(feat:|feature:)"; then
     # Xuất biến môi trường để thông báo về việc tăng version
     export VERSION_BUMPED=true
     # Chạy standard-version để tăng version
