@@ -4,4 +4,11 @@ set -e
 
 echo "Hello Learn ReactJs For Tai Dev"
 
-npm run lint-staged && echo "---- Oh my good prefetch 🔥 ----" && git push origin HEAD
+# Run lint-staged or other pre-commit tasks
+npm run lint-staged
+
+# Infomation for me success or error
+echo "---- Oh my good prefetch 🔥 ----"
+
+# Push to remote repository (origin) on successful commit
+git push origin HEAD
