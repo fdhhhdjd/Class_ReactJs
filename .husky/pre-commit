@@ -16,8 +16,9 @@ git push origin HEAD
 # Get the commit message from the latest commit
 COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 
-# Check if the commit message contains the word "feature"
-if echo "$COMMIT_MESSAGE" | grep -qi "feat"; then
+# Check if the commit message contains the word "feat" and the environment variable is not set
+if echo "$COMMIT_MESSAGE" | grep -qi "feat" && [ -z "$VERSION_BUMPED" ]; then
+  export VERSION_BUMPED=true
   # Run standard-version to bump the version
   npx standard-version
 fi
