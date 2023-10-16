@@ -3,4 +3,4 @@
 
 echo "Hello Learn ReactJs For Tai Dev"
 
-npm run lint-staged && echo "Oh my good prefetch 😆" && git push origin HEAD
+npm run lint-staged && echo "---- Oh my good prefetch 🔥 ----" && git push origin HEAD
