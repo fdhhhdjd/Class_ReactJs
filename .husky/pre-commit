@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
+# Stop if error
 set -e
+
 . "$(dirname -- "$0")/_/husky.sh"
 
 echo "Hello Learn ReactJs For Tai Dev"
@@ -7,22 +9,8 @@ echo "Hello Learn ReactJs For Tai Dev"
 # Run lint-staged or other pre-commit tasks
 npm run lint-staged
 
-# Infomation for me success or error
 echo "---- Oh my good prefetch 🔥 ----"
 
-# Lấy commit message từ command line arguments
-COMMIT_MESSAGE="$1"
 
-# Kiểm tra xem commit message chứa "feat" hoặc "feature" không
-if echo "$COMMIT_MESSAGE" | grep -qiE "(feat|feature)"; then
-  # Xuất biến môi trường để thông báo về việc tăng version
-  export VERSION_BUMPED=true
-  # Chạy standard-version để tăng version
-  npx standard-version
-else
-  # Commit message không chứa "feat" hoặc "feature"
-  echo "Commit message must contain 'feat' or 'feature'."
-fi
 
-# Push to remote repository (origin) on successful commit
-git push origin HEAD
+
