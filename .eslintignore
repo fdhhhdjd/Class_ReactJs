@@ -4,3 +4,4 @@ build/
 
 *.css
 *.svg
+*.config.js

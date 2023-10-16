@@ -1,38 +1,71 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react-hooks/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 2021,
-    "sourceType": "module"
-  },
-  "plugins": ["react", "prettier", "react-hooks"],
-  "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [
-      "warn",
-      {
-        "extensions": [".js", ".jsx"]
-      }
-    ],
-    "react/prop-types": "off",
-    "react/display-name": "off",
-    "react/jsx-key": "off",
-    "react/no-unknown-property": "off",
-    "react-hooks/exhaustive-deps": "off"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  }
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": ["plugin:react/recommended", "plugin:prettier/recommended", "plugin:react-hooks/recommended"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "prettier", "react-hooks", "import", "detox"],
+	"rules": {
+		"react/react-in-jsx-scope": "off",
+		"react/jsx-filename-extension": [
+			"warn",
+			{
+				"extensions": [".js", ".jsx"]
+			}
+		],
+		"prettier/prettier": ["error"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"react/prop-types": "off",
+		"react/display-name": "off",
+		"react/jsx-key": "off",
+		"react/no-unknown-property": "off",
+		"react-hooks/exhaustive-deps": "off",
+		"import/order": [
+			"error",
+			{
+				"groups": ["builtin", "external", "internal", ["sibling", "parent"], "index", "unknown"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
+		],
+		"no-console": [
+			"error",
+			{
+				"allow": ["info", "warn", "error", "time", "timeEnd"]
+			}
+		],
+		// Use const when possible.
+		"prefer-const": "warn",
+		"max-len": ["error", 102],
+		"array-bracket-newline": "warn",
+		"consistent-return": "warn",
+		"eqeqeq": "error",
+		"no-fallthrough": "off",
+		"no-unused-expressions": "warn",
+		"react-hooks/rules-of-hooks": "error",
+		"no-unused-vars": [
+			"error",
+			{
+				"varsIgnorePattern": "^_",
+				"argsIgnorePattern": "^_"
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/extensions": [".js", ".jsx"]
+	}
 }

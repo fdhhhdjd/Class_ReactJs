@@ -6,11 +6,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext .js --fix",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore && echo \"Oh my good prefetch 😆\"",
+		"lint:fix": "eslint . --fix --ext .ts,.vue",
+    "prettier": "prettier --write",
+		"format": "prettier --write src/",
     "preview": "vite preview",
     "prepare": "husky install",
-    "pre-commit": "echo \"[Husky] pre-commit\""
+    "pre-commit": "echo \"[Husky] pre-commit\"",
+    "lint-staged": "lint-staged"
   },
+  "lint-staged": {
+		"src/**/*.{js,jsx}": [
+			"npm run lint",
+			"npm run prettier"
+		]
+	},
   "husky": {
     "hooks": {
       "pre-commit": "npx lint-staged"
@@ -33,12 +43,15 @@
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-detox": "^1.0.0",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.0",
     "prettier": "^3.0.3",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "lint-staged": "^14.0.1"
   }
 }
