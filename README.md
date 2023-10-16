@@ -1,1 +1,1 @@
-# Final Project: E-Commerce Frontend
+# Final Project: E-Commerce Front-end
