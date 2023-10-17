@@ -1,4 +1,16 @@
 #!/usr/bin/env sh
+# Stop if error
+set -e
+
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo "Hello Learn ReactJs For Tai Dev" &&  npm run lint
+echo "Hello Learn ReactJs For Tai Dev"
+
+# Run lint-staged or other pre-commit tasks
+npm run lint-staged
+
+echo "---- Oh my good prefetch 🔥 ----"
+
+
+
+

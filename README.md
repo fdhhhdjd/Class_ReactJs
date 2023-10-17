@@ -7,11 +7,11 @@
 <a href = "mailto:nguyentientai10@gmail.com"><img src="https://img.icons8.com/fluency/48/000000/send-mass-email.png" alt="License"></a>
 </p>
 
-## Class Online: Learn ReactJs With Tai Dev
+## Class Online: Setup Source React + Vite
 
 ## Team Word: Liên hệ công việc https://profile-forme.cf
 
-## 1. Nguyen Tien Tai( MainTain 🚩).
+## 1. Nguyen Tien Tai ( MainTain 🚩).
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄.
 
