@@ -5,11 +5,11 @@ import React from 'react';
 // import Prop_Drilling from './prop_drilling';
 
 //* HOOK
-// import Hook from './hooks/hook';
+import Hook from './hooks/hook';
 // import RouterMain from './routers/router';
 
 //* LIB
-import Lib from './libs/lib';
+// import Lib from './libs/lib';
 
 //* CUSTOM HOOk
 // import CustomHook from './custom_hooks';
@@ -27,13 +27,13 @@ function App() {
       {/* <Prop_Drilling /> */}
 
       {/* HOOK */}
-      {/* <Hook /> */}
+      <Hook />
 
       {/* ROUTER */}
       {/* <RouterMain /> */}
 
       {/* LIB */}
-      <Lib />
+      {/* <Lib /> */}
 
       {/* Custom Hook */}
       {/* <CustomHook /> */}

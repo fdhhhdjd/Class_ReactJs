@@ -14,6 +14,7 @@ import UseState from './useState/useState';
 // import UseImperativeHandle from "./useImperativeHandle/useImperativeHandle";
 // import UseContext from "./useContext/userContext";
 // import UseReducer from "./userReducer/useReducer";
+import UseInsertionEffect from './useInsertionEffect/useInsertionEffect';
 
 ///* HOC
 // import Memo from "./Hoc/memo/memo";
@@ -59,6 +60,9 @@ function Hook() {
 
       {/* 12. useReducer*/}
       {/* <UseReducer /> */}
+
+      {/* 13. useInsertionEffect*/}
+      <UseInsertionEffect />
     </Fragment>
   );
 }
