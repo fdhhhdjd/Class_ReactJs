@@ -9,7 +9,7 @@
 
 ## Class Online: Learn ReactJs With Tai Dev
 
-## Team Word: Liên hệ công việc https://profile-forme.cf
+## Team Word: Liên hệ công việc https://profile-forme.com
 
 ## 1. Nguyen Tien Tai( MainTain 🚩).
 
@@ -23,6 +23,6 @@
 
 ## Chi Nhánh: NGAN HANG TMCP AN BINH (ABBANK).
 
-## SUPORT CONTACT: [https://profile-forme.cf](https://profile-forme.cf)
+## SUPORT CONTACT: [https://profile-forme.cf](https://profile-forme.com)
 
 ## Thank You <3.
