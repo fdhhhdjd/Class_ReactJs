@@ -11,7 +11,7 @@
 
 ## Team Word: Liên hệ công việc https://profile-forme.com
 
-## 1. Nguyen Tien Tai( MainTain 🚩).
+## 1. Nguyen Tien Tai ( MainTain 🚩).
 
 ## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄.
 
