@@ -7,19 +7,19 @@ const todoReducer = (state, action) => {
       return [...state, { text: action.payload, completed: false, isEditing: false }];
     case 'TOGGLE_TODO':
       return state.map((todo, index) =>
-        index === action.payload ? { ...todo, completed: !todo.completed } : todo
+        index === action.payload ? { ...todo, completed: !todo.completed } : todo,
       );
     case 'DELETE_TODO':
       return state.filter((_, index) => index !== action.payload);
     case 'TOGGLE_EDIT_MODE':
       return state.map((todo, index) =>
-        index === action.payload ? { ...todo, isEditing: !todo.isEditing } : todo
+        index === action.payload ? { ...todo, isEditing: !todo.isEditing } : todo,
       );
     case 'EDIT_TODO':
       return state.map((todo, index) =>
         index === action.payload.index
           ? { ...todo, text: action.payload.text, isEditing: false }
-          : todo
+          : todo,
       );
     default:
       return state;

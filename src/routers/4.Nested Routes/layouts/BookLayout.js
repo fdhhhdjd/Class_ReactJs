@@ -44,7 +44,7 @@ const BookLayout = () => {
             { n: e.target.value },
             {
               replace: true,
-            }
+            },
           )
         }
       />

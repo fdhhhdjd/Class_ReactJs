@@ -14,7 +14,7 @@ import * as types from './actionType';
 function* onLoadContactAsync() {
   try {
     const contacts = yield new Promise((resolve) =>
-      firebaseDb.child('contacts_saga').on('value', resolve)
+      firebaseDb.child('contacts_saga').on('value', resolve),
     );
     if (contacts.val() !== null) {
       yield put(getContactsSuccess(contacts.val()));

@@ -16,7 +16,7 @@ const todoReducer = (state, action) => {
       return {
         ...state,
         todos: state.todos.map((todo, index) =>
-          index === action.payload ? { ...todo, completed: !todo.completed } : todo
+          index === action.payload ? { ...todo, completed: !todo.completed } : todo,
         ),
       };
 
@@ -30,7 +30,7 @@ const todoReducer = (state, action) => {
       return {
         ...state,
         todos: state.todos.map((todo, index) =>
-          index === action.payload ? { ...todo, isEditing: !todo.isEditing } : todo
+          index === action.payload ? { ...todo, isEditing: !todo.isEditing } : todo,
         ),
       };
 
@@ -40,7 +40,7 @@ const todoReducer = (state, action) => {
         todos: state.todos.map((todo, index) =>
           index === action.payload.index
             ? { ...todo, text: action.payload.text, isEditing: false }
-            : todo
+            : todo,
         ),
       };
 

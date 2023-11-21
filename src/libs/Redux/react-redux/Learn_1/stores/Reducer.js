@@ -42,7 +42,7 @@ const TodoReducer = (state = initialState, action) => {
               ...action.payload,
               completed: !action.payload.completed,
             }
-          : t
+          : t,
       );
       return {
         ...state,

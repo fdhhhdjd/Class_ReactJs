@@ -19,7 +19,7 @@ function Todo() {
       todos.concat({
         text: input,
         id: generateId(),
-      })
+      }),
     );
     setInput('');
   };
@@ -42,8 +42,8 @@ function Todo() {
               ...todo,
               text: newTodoText,
             }
-          : todo
-      )
+          : todo,
+      ),
     );
     setEditingTodo(null);
     setNewTodoText('');

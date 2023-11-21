@@ -47,7 +47,7 @@ const FormValidation = () => {
         .min(8, 'Password must be at least 8 characters')
         .matches(
           /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-          'Password must contain at least one special character'
+          'Password must contain at least one special character',
         ),
       confirmPassword: string()
         .oneOf([ref('password'), undefined], 'make sure your password confirmation match')

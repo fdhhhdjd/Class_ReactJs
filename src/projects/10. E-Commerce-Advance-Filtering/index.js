@@ -19,7 +19,7 @@ function Project_10() {
   };
 
   const filteredItems = products.filter(
-    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1,
   );
 
   // ----------- Radio Filtering -----------
@@ -48,7 +48,7 @@ function Project_10() {
           color === selected ||
           company === selected ||
           newPrice === selected ||
-          title === selected
+          title === selected,
       );
     }
 
