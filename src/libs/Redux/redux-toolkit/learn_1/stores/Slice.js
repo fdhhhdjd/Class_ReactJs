@@ -53,7 +53,7 @@ const TodoSlice = createSlice({
   initialState,
   reducers: {
     getContact: (state, action) => {
-      state.contact = state.contacts.find((item) => item.id == action.payload);
+      state.contact = contactDetail.find((item) => item.id == action.payload);
     },
     addContact: (state, action) => {
       const newData = { ...action.payload, id: uuidv4() };
